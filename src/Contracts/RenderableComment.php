@@ -16,9 +16,9 @@ interface RenderableComment
 
     public function getParsedBody(): string;
 
-    public function getCreatedAt(): \DateTime|\Carbon\Carbon;
+    public function getCreatedAt(): \DateTime|\Carbon\Carbon|\Carbon\CarbonImmutable;
 
-    public function getUpdatedAt(): \DateTime|\Carbon\Carbon;
+    public function getUpdatedAt(): \DateTime|\Carbon\Carbon|\Carbon\CarbonImmutable;
 
     public function getLabel(): ?string;
 
